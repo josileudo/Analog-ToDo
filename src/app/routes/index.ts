@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import Header from '../components/header';
+import HeaderComponent from '../components/header';
+import MainComponent from "../pages/index.page";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [Header],
-  template: `<app-header />`,
+  imports: [MainComponent],
+  template: `<app-main></app-main>`,
   styles: [``],
 })
 export default class HomeComponent {
